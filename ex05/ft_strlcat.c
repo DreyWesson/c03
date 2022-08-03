@@ -6,11 +6,9 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 12:39:12 by doduwole          #+#    #+#             */
-/*   Updated: 2022/08/03 17:48:29 by doduwole         ###   ########.fr       */
+/*   Updated: 2022/08/03 17:57:13 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_str_len(char *str)
 {
