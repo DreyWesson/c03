@@ -6,7 +6,7 @@
 /*   By: doduwole <doduwole@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 22:16:10 by doduwole          #+#    #+#             */
-/*   Updated: 2022/08/04 07:49:49 by doduwole         ###   ########.fr       */
+/*   Updated: 2022/08/04 09:42:18 by doduwole         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,16 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while (i < n)
+	if (n == 0)
+		return (0);
+	while (i < (n-1))
 	{
+		if (s1[i] == '\0' || s2[i] == '\0')
+			break ;
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
 		i++;
 	}
-	i--;
 	return (s1[i] - s2[i]);
 }
 
